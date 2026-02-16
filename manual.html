@@ -225,6 +225,236 @@
                     <div class="code-line"><span class="code-host">www</span> → server</div>
                 </div>
             </div>
+
+            <div class="subsection">
+                <h3>3.4 Tabla de Direcciones IP</h3>
+                <p class="table-intro">Asignación completa de direcciones IP de todos los dispositivos de la red.</p>
+                <div class="ip-table-wrapper">
+                    <table class="ip-table">
+                        <thead>
+                            <tr>
+                                <th>Dispositivo</th>
+                                <th>Interfaz</th>
+                                <th>Dirección IP</th>
+                                <th>Máscara</th>
+                                <th>Gateway</th>
+                                <th>Tipo</th>
+                                <th>Notas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- INFRAESTRUCTURA -->
+                            <tr class="category-row">
+                                <td colspan="7">🏗️ Infraestructura</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Router0</span></td>
+                                <td>G0/0</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td>/24</td>
+                                <td>N/A</td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Gateway / DHCP / DNS</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Switch0</span></td>
+                                <td>VLAN 1</td>
+                                <td><code>192.168.1.2</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Gestión (SVI)</td>
+                            </tr>
+
+                            <!-- SERVICIOS -->
+                            <tr class="category-row">
+                                <td colspan="7">🖥️ Servicios</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Server0</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.10</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Servidor de archivos</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Printer0</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.20</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-static">Estática</span></td>
+                                <td>Impresora de red</td>
+                            </tr>
+
+                            <!-- EQUIPOS MÓVILES -->
+                            <tr class="category-row">
+                                <td colspan="7">💻 Equipos Móviles <span class="range-tag">(Rango DHCP)</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Laptop0</span></td>
+                                <td>Wireless</td>
+                                <td><code>192.168.1.50</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">Laptop1</span></td>
+                                <td>Wireless</td>
+                                <td><code>192.168.1.51</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+
+                            <!-- ORDENADORES -->
+                            <tr class="category-row">
+                                <td colspan="7">🖥️ Ordenadores <span class="range-tag">(Rango DHCP)</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC0</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.52</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC1</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.53</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC2</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.54</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC3</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.55</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC4</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.56</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC5</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.57</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC6</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.58</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td>Añadido</td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC7</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.59</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC8</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.60</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC9</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.61</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC10</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.62</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC11</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.63</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC12</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.64</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC13</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.65</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="device-name">PC14</span></td>
+                                <td>FastEth0</td>
+                                <td><code>192.168.1.66</code></td>
+                                <td>/24</td>
+                                <td><code>192.168.1.1</code></td>
+                                <td><span class="badge badge-dynamic">Dinámica</span></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
         <!-- Section 4: Servicios Implementados -->
